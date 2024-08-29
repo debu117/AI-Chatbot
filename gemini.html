@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geminiClone</title>
+    <!--Linking Google Fonts for Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="gemini.css">
+</head>
+<body>
+    <header class="header">
+        <!--header greetings-->
+        <h2 class="title">Hello, there</h2>
+        <h4 class="subtitle">How can I help you today?</h4>
+         <!--suggestion List-->
+        <ul class="suggestion-list">
+            <li class="suggestion">
+                <h4 class="text">Help me a plan of day outing.</h4>
+                <span class="icon material-symbols-rounded">
+                    draw
+                    </span>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">Suggest some skill.</h4>
+                <span class="icon material-symbols-rounded">
+                    lightbulb
+                    </span>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">Find me some new development.</h4>
+                <span class="icon material-symbols-rounded">
+                    explore
+                    </span>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">Write a js code.</h4>
+                <span class="icon material-symbols-rounded">
+                    code
+                    </span>
+            </li>
+        </ul>
+    </header>
+    <!--Chat List-->
+    <div class="chat-list">
+        <div class="message outgoing">
+            <div class="message-content">
+                <img src="user1.jpg.jpeg" alt="User Image" class="avatar">
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quia?</p> 
+            </div>
+        </div>
+        <div class="message incoming">
+            <div class="message-content">
+                <img src="gemini.svg" alt="Gemini Image" class="avatar">
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quia?</p> 
+            </div>
+            <span class="icon material-symbols-rounded">
+                content_copy
+            </span>
+        </div>
+       <!-- <div class="message incoming loading">
+            <div class="message-content">
+                <img src="gemini.svg" alt="Gemini Image" class="avatar">
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quia?</p> 
+                <div class="loading-indicator">
+                    <div class="loading-bar"></div>
+                    <div class="loading-bar"></div>
+                    <div class="loading-bar"></div>
+                </div>
+            </div>
+            <span class="icon material-symbols-rounded">
+                content_copy
+            </span>
+        </div>
+    -->
+    </div>
+     <!--Typing Area-->
+    <div class="typing-area">
+        <form action="" class="typing-form">
+            <div class="input-wrapper">
+                <input type="text" placeholder="Enter a prompt Here" class="typing-input" required>
+                <button class="icon material-symbols-rounded">
+                    send
+                </button>
+            </div>
+            <div class="action-buttons">
+                <span id="toogle-theme-button" class="icon material-symbols-rounded">
+                    light_mode
+                </span>
+                <span id="delete-chat-button" class="icon material-symbols-rounded">
+                    delete
+                </span>
+            </div>
+        </form>
+            <p class="disclaimer-text">
+                Hi, Gemini may display inaccurate info, including about people, So it suggest double it to check once again, Thank You.
+            </p>
+    </div>
+    <script src="gemini.js"></script>
+</body>
+</html>
